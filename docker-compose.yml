@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nodered:
+    image: nodered-rpi
+    container_name: nodered
+    ports:
+      - 1881:1880
+    volumes:
+      - /home/pi/mohan/nodered-rpi/data:/data
+
